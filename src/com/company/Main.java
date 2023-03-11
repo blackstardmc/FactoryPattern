@@ -3,10 +3,13 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	    System.out.println("*_* Factory Patern *_*");
-	    Food order1=new OrderFood().processOrder("Pizza");
-	    order1.prepare();
-	    PaymentMethod order2=new OrderPayment().processPayment("Bitcoin");
-	    order2.pay();
+        //Two examples of how to implement the factory pattern
+        //Abstract factory will be implemented in another repository
+
+        System.out.println("*_* Factory Patern *_*");
+        Food order1 = new FoodFactory().getFood("Pizza");
+        order1.prepare();
+        PaymentMethod order2 = new PaymentMethodFactory().getPaymentMethod("Bitcoin");
+        order2.pay();
     }
 }

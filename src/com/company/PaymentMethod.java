@@ -46,9 +46,3 @@ class PaymentMethodFactory{
         return null;
     }
 }
-
-class OrderPayment{
-    public PaymentMethod processPayment(String paymentMethodName){
-        return new PaymentMethodFactory().getPaymentMethod(paymentMethodName);
-    }
-}

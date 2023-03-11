@@ -36,11 +36,4 @@ class FoodFactory {
 }
 
 
-class OrderFood {
-
-
-    public Food processOrder(String foodType) {
-        return new FoodFactory().getFood(foodType);
-    }
-}
 
